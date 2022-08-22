@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 108051902492672760}
   - component: {fileID: 108051902492672761}
-  m_Layer: 0
-  m_Name: Ship
+  m_Layer: 6
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,9 +95,13 @@ GameObject:
   - component: {fileID: 108051903381830086}
   - component: {fileID: 5509988409032435844}
   - component: {fileID: 1153802193}
-  m_Layer: 0
+  - component: {fileID: 7051318727805799582}
+  - component: {fileID: 1195626458066304165}
+  - component: {fileID: 8628464111756393862}
+  - component: {fileID: 1429166153751421818}
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,3 +169,75 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!50 &7051318727805799582
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108051903381830105}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &1195626458066304165
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108051903381830105}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38296562
+--- !u!114 &8628464111756393862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108051903381830105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eaa6f50d23c4f749b57c15f8b3e5703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  hitEffect: {fileID: 395032221133559867, guid: 3c700a8ffe2059143bb54ecfb1914ce1, type: 3}
+  applyCameraShake: 1
+--- !u!114 &1429166153751421818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108051903381830105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c95bd1faac81e547882871744b7b6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1369791878318598328, guid: 3a19d1cf396edf340907573c159f27e1, type: 3}
+  projectileSpeed: 10
+  projectileDuration: 5
+  basefiringRate: 0.2
+  firingRateVariance: 0
+  minimumFiringRate: 0.1
+  useAI: 0
+  isFiring: 0

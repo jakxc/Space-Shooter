@@ -16,6 +16,12 @@ public class PlayerController : MonoBehaviour
     Vector2 minBounds;
     Vector2 maxBounds;
 
+    Shooter shooter;
+
+    void Awake() {
+        shooter = GetComponent<Shooter>();
+    }
+
     void Start() {
         InitBounds();
     }
@@ -50,5 +56,13 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue value)
     {
         playerInput = value.Get<Vector2>();
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 }
