@@ -6,6 +6,27 @@ public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] int currentScore = 0;
 
+    static ScoreKeeper instance;
+
+    void Awake() 
+    {
+        ManageSingleton();
+    }
+
+    void ManageSingleton()
+    {
+        if (instance != null)
+        {
+            gameObject.SetActive(false); //Ensure ScoreKeeper is not used by other classes
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     public int GetScore()
     {
         return currentScore;
