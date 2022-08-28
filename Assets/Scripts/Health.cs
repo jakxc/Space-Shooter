@@ -29,12 +29,17 @@ public class Health : MonoBehaviour
         if (damageController != null && isPlayer)
         {
             TakeDamage(damageController.GetDamage());
-            PlayHitEffect();
+           
+            if (health > 0) 
+            {
+                PlayHitEffect();
+            }
+            
             audioPlayer.PlayPlayerDamageClip();
             ShakeCamera();
             damageController.Hit();
         } 
-        else if (damageController != null && ! isPlayer) {
+        else if (damageController != null && !isPlayer) {
             TakeDamage(damageController.GetDamage());
             PlayHitEffect();
             audioPlayer.PlayEnemyDamageClip();
@@ -61,6 +66,7 @@ public class Health : MonoBehaviour
         }
         else
         {
+            audioPlayer.PlayPlayerDeathClip();
             levelManager.LoadGameOver();
         }
 

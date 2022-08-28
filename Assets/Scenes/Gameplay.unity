@@ -1204,9 +1204,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: c8766021cea6bd84a8c881e14f4a5178, type: 3}
     - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: playerDeathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 19ee6ddd95f41e14fa886134fe9cd5e6, type: 3}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
       propertyPath: playerDamageClip
       value: 
       objectReference: {fileID: 8300000, guid: bfadc10ac43c1274c8fcb08b8b1c9ec7, type: 3}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: enemyDamageVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: playerDeathVolume
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: playerDamageVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7756702820940832798, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
