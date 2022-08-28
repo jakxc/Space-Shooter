@@ -649,6 +649,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 41dc3af6742727f4bb90f6e8d10c438f, type: 2}
   - {fileID: 11400000, guid: de5b6de4c7074944ea99490f64d2cb0f, type: 2}
   - {fileID: 11400000, guid: d08467b5604ab57438cf60934053e15c, type: 2}
+  - {fileID: 11400000, guid: a6cb50b4bd7baba458f642fdae35604f, type: 2}
+  - {fileID: 11400000, guid: 23b4fb0904c2f1541aa564c94a61ced8, type: 2}
+  - {fileID: 11400000, guid: d05be3e5e743fac4591cedcee1350c25, type: 2}
   wavesDelay: 2
   isLooping: 1
 --- !u!1 &1062428231
@@ -896,7 +899,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1192,6 +1195,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: damageVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: enemyDamageClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8766021cea6bd84a8c881e14f4a5178, type: 3}
+    - target: {fileID: 7756702820940832797, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
+      propertyPath: playerDamageClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bfadc10ac43c1274c8fcb08b8b1c9ec7, type: 3}
     - target: {fileID: 7756702820940832798, guid: ec4e0d97a644a194897cbd36cb3ec979, type: 3}
       propertyPath: m_Name
       value: AudioPlayer

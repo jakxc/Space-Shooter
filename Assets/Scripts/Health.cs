@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
     [SerializeField] float health = 100f;
     [SerializeField] int score = 50;
     [SerializeField] ParticleSystem hitEffect;
-    [SerializeField] bool applyCameraShake;
     [SerializeField] bool isPlayer;
     
     CameraShake cameraShake;
@@ -27,14 +26,20 @@ public class Health : MonoBehaviour
     {
         DamageController damageController = other.GetComponent<DamageController>();
 
-        if (damageController != null)
+        if (damageController != null && isPlayer)
         {
             TakeDamage(damageController.GetDamage());
             PlayHitEffect();
-            audioPlayer.PlayDamageClip();
+            audioPlayer.PlayPlayerDamageClip();
             ShakeCamera();
             damageController.Hit();
-        }    
+        } 
+        else if (damageController != null && ! isPlayer) {
+            TakeDamage(damageController.GetDamage());
+            PlayHitEffect();
+            audioPlayer.PlayEnemyDamageClip();
+            damageController.Hit();
+        }
     }
 
     void TakeDamage(float damage)
@@ -73,7 +78,7 @@ public class Health : MonoBehaviour
 
     void ShakeCamera()
     {
-        if (cameraShake != null && applyCameraShake)
+        if (cameraShake != null)
         {
             cameraShake.Play();
         }

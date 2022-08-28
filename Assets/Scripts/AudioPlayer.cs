@@ -9,7 +9,8 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] [Range(0f, 1f)] float shootingVolume = 1f;
 
     [Header("Damage")]
-    [SerializeField] AudioClip damageClip;
+    [SerializeField] AudioClip playerDamageClip;
+    [SerializeField] AudioClip enemyDamageClip;
     [SerializeField] [Range(0f, 1f)] float damageVolume = 1f;
 
     static AudioPlayer instance;
@@ -43,9 +44,14 @@ public class AudioPlayer : MonoBehaviour
         PlayClip(shootingClip, shootingVolume);
     }
 
-    public void PlayDamageClip()
+    public void PlayPlayerDamageClip()
     {
-        PlayClip(damageClip, damageVolume);
+        PlayClip(playerDamageClip, damageVolume);
+    }
+
+    public void PlayEnemyDamageClip()
+    {
+        PlayClip(enemyDamageClip, damageVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)

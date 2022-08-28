@@ -93,10 +93,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 108051903381830086}
-  - component: {fileID: 5509988409032435844}
   - component: {fileID: 1153802193}
   - component: {fileID: 7051318727805799582}
   - component: {fileID: 1195626458066304165}
+  - component: {fileID: 5509988409032435844}
   - component: {fileID: 8628464111756393862}
   - component: {fileID: 1429166153751421818}
   m_Layer: 6
@@ -122,23 +122,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5509988409032435844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108051903381830105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43be6a20729d72344bf6c9b950f63084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  paddingTop: 5
-  paddingLeft: 0.5
-  paddingRight: 0.5
-  paddingBottom: 2
 --- !u!114 &1153802193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,9 +186,26 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.012455285}
   serializedVersion: 2
-  m_Radius: 0.38296562
+  m_Radius: 0.37051034
+--- !u!114 &5509988409032435844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108051903381830105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43be6a20729d72344bf6c9b950f63084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  paddingTop: 8
+  paddingLeft: 0.5
+  paddingRight: 0.5
+  paddingBottom: 2
 --- !u!114 &8628464111756393862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   score: 0
-  hitEffect: {fileID: 395032221133559867, guid: 3c700a8ffe2059143bb54ecfb1914ce1, type: 3}
+  hitEffect: {fileID: 4197832317637267649, guid: 922eefe38c91e8c4a9b3c5f2410a781e, type: 3}
   applyCameraShake: 1
   isPlayer: 1
 --- !u!114 &1429166153751421818

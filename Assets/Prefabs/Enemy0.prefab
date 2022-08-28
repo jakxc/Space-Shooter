@@ -84,9 +84,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.00934726}
   serializedVersion: 2
-  m_Radius: 0.45891142
+  m_Radius: 0.43086964
 --- !u!114 &-3762474165031618346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eaa6f50d23c4f749b57c15f8b3e5703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 35
   score: 20
-  hitEffect: {fileID: 395032221133559867, guid: 3c700a8ffe2059143bb54ecfb1914ce1, type: 3}
+  hitEffect: {fileID: 4197832317637267649, guid: 922eefe38c91e8c4a9b3c5f2410a781e, type: 3}
   applyCameraShake: 0
   isPlayer: 0
 --- !u!114 &-9109720103311818706
@@ -134,7 +134,7 @@ MonoBehaviour:
   projectileDuration: 5
   basefiringRate: 1
   firingRateVariance: 0.2
-  minimumFiringRate: 0.1
+  minimumFiringRate: 0.5
   useAI: 1
   isFiring: 0
 --- !u!1 &857368094490137116
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 4acf785b3893e104cac6540773133085, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 727dc9a6df57bb94b87ea4ef58d082c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

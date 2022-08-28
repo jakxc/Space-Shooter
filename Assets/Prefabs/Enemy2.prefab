@@ -84,9 +84,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0003608078}
+  m_Offset: {x: 0, y: -0.07033414}
   serializedVersion: 2
-  m_Radius: 0.38814977
+  m_Radius: 0.35880607
 --- !u!114 &-7633246968852760604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eaa6f50d23c4f749b57c15f8b3e5703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 75
   score: 60
-  hitEffect: {fileID: 395032221133559867, guid: 3c700a8ffe2059143bb54ecfb1914ce1, type: 3}
+  hitEffect: {fileID: 4197832317637267649, guid: 922eefe38c91e8c4a9b3c5f2410a781e, type: 3}
   applyCameraShake: 0
   isPlayer: 0
 --- !u!114 &-2820093629970673532
@@ -129,12 +129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c95bd1faac81e547882871744b7b6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1369791878318598328, guid: 1dbfd5bcd6986494b8ffd44b4c3f2992, type: 3}
-  projectileSpeed: 10
+  projectilePrefab: {fileID: 1369791878318598328, guid: 2223941c80b7c564e9b08561ecd5fb20, type: 3}
+  projectileSpeed: 14
   projectileDuration: 5
-  basefiringRate: 1
-  firingRateVariance: 0.5
-  minimumFiringRate: 0.1
+  basefiringRate: 0.5
+  firingRateVariance: 0.2
+  minimumFiringRate: 0.2
   useAI: 1
   isFiring: 0
 --- !u!1 &5559907305935926655
@@ -161,14 +161,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5559907305935926655}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3089984853323099531}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4493775238838600060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bfb950f23cd7c8348bf758bd0b717d25, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f33a7a98ab1ec8343b5bd736a89ba786, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
